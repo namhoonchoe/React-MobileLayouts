@@ -1,15 +1,11 @@
-import React from 'react'
+import ExplorePresenter from "./ExplorePresenter"
 
-function Explore() {
-  return (
-    <div>Explore</div>
-  )
-}
+
 
  
 function ExploreContainer() {
   return (
-    <div>ExploreContainer</div>
+    <ExplorePresenter/>
   )
 }
 

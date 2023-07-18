@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ExplorePresenter = () => {
+const ExplorePresenter:React.FC = () => {
   return (
     <div>ExplorePresenter</div>
   )

@@ -1,9 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import SidebarLayout from "./UI/Layouts/SidebarLayout";
+import Navigation from "./UI/Navigation";
+import { Outlet } from "react-router-dom";
 function Root() {
-  return (
-    <div>Root</div>
-  )
+  return <SidebarLayout lSidebar={<Navigation />} mainContent={<Outlet />} />;
 }
 
-export default Root
+export default Root;
