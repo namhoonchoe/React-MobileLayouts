@@ -5,9 +5,10 @@ const HomePresenter: React.FC = () => {
   return (
     <Flex
       width={"100%"}
-      height={"100%"}
-      alignItems={"center"}
+      height={"200vh"}
+      alignItems={"start"}
       justifyContent={"center"}
+      paddingTop={"4rem"}
     >
       <Text fontSize={"2rem"}>
         화면설계서를 보고 임의로 구성해 보았습니다. 레이아웃 위주로 봐 주세요<br/>

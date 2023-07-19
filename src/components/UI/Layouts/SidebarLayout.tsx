@@ -3,13 +3,21 @@ import { Grid, GridItem, chakra } from "@chakra-ui/react";
 
 const LeftSideBarGrid = chakra(Grid, {
   baseStyle: {
-    width:"100%",
+    width: "100%",
     maxWidth: "1520px",
-    height: "100vh",
-    gridTemplateColumns: "repeat(6,1fr)",
-    gridTemplateAreas: `"left-sidebar  main-content main-content main-content main-content main-content "
+    alignItems:"start",
+    gridTemplateColumns: { base: "1fr", md: "repeat(6,1fr)" },
+    gridTemplateAreas: {
+      base: `
+      "main-content main-content main-content"
+      "main-content main-content main-content"
+      "main-content main-content main-content"
+      "main-content main-content main-content"
+      "left-sidebar  left-sidebar left-sidebar"`,
+      md: `"left-sidebar  main-content main-content main-content main-content main-content "
     "left-sidebar  main-content main-content main-content main-content  main-content "
-    "left-sidebar  main-content main-content main-content main-content   main-content"`
+    "left-sidebar  main-content main-content main-content main-content   main-content"`,
+    },
   },
 });
 
@@ -17,7 +25,7 @@ const MainContent = chakra(GridItem, {
   baseStyle: {
     backgroundColor: "#f97171",
     gridArea: "main-content",
-     
+    height: "200vh",
   },
 });
 
@@ -25,8 +33,13 @@ const LSidebar = chakra(GridItem, {
   baseStyle: {
     backgroundColor: "#f5d55f",
     gridArea: "left-sidebar",
-     
-  },
+    height: { base: "5rem", md: "100dvh" },
+    width:"100%",
+    position: "sticky",
+    top:0,
+    left: 0,
+    bottom: 0,
+   },
 });
 
 interface ILeftSidebarProps {
