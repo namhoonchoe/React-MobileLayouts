@@ -1,8 +1,6 @@
-
+import NotificationPresenter from "./NotificationPresenter";
 function NotificationContainer() {
-  return (
-    <div>NotificationContainer</div>
-  )
+  return <NotificationPresenter />;
 }
 
-export default NotificationContainer
+export default NotificationContainer;

@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "@components/Root";
-import Explore from "@screens/Explore"
-import Home from "@screens/Home"
-import NewThread from "@screens/NewThread"
-import Notification from "@screens/Notification"
-import Profile from "@screens/Profile"
-
+import Explore from "@screens/Explore";
+import Home from "@screens/Home";
+import NewThread from "@screens/NewThread";
+import Notification from "@screens/Notification";
+import Profile from "@screens/Profile";
 
 const RootRouter = createBrowserRouter([
   {
@@ -20,28 +19,23 @@ const RootRouter = createBrowserRouter([
         path: "explore",
         element: <Explore />,
       },
-    
+
       {
-        path:"newThread",
-        element:<NewThread/>
+        path: "newThread",
+        element: <NewThread />,
       },
 
       {
-        path:"notification",
-        element:<Notification/>
+        path: "notification",
+        element: <Notification />,
       },
 
       {
-        path:"profile",
-        element:<Profile/>
+        path: "profile",
+        element: <Profile />,
       },
     ],
   },
-  {
-    path:"/setting",
-    element:<Setting/>
-  },
- 
 ]);
 
 export default RootRouter;
