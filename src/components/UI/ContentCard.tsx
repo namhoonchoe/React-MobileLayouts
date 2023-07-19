@@ -31,15 +31,7 @@ const InfoContainer = chakra(Flex, {
     padding: "5px",
   },
 });
-
-const UserInfo = chakra(Flex, {
-  baseStyle: {
-    justifyContent: "start",
-    alignItems: "center",
-    mt: 1,
-    color: "gray.600",
-  },
-});
+ 
 
 const TagContainer = chakra(Flex, {
   baseStyle: {
