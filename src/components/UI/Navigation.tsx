@@ -173,7 +173,7 @@ function Navigation() {
             <IconContainer>
               <NewThreadIcon />
             </IconContainer>
-            <NavTitle>새 스레드</NavTitle>
+            <NavTitle>새 포스트</NavTitle>
           </NavContainer>
         </Link>
         <Link to="/notification">

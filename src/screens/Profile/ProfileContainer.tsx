@@ -1,7 +1,8 @@
+import ProfilePresenter from "./ProfilePresenter"
 
 function ProfileContainer() {
   return (
-    <div>ProfileContainer</div>
+    <ProfilePresenter/>
   )
 }
 

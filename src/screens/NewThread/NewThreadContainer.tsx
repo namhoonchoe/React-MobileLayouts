@@ -1,7 +1,8 @@
+import NewThreadPresenter from "./NewThreadPresenter"
 
 function NewThreadContainer() {
   return (
-    <div>NewThreadContainer</div>
+    <NewThreadPresenter/>
   )
 }
 

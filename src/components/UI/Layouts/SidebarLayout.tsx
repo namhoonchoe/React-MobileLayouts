@@ -5,7 +5,7 @@ const LeftSideBarGrid = chakra(Grid, {
   baseStyle: {
     width: "100%",
     maxWidth: "1520px",
-    alignItems:"start",
+    alignItems:"start",  
     gridTemplateColumns: { base: "1fr", md: "repeat(6,1fr)" },
     gridTemplateAreas: {
       base: `
@@ -25,7 +25,8 @@ const MainContent = chakra(GridItem, {
   baseStyle: {
     backgroundColor: "#f97171",
     gridArea: "main-content",
-    height: "200vh",
+    minHeight:"100dvh",
+    paddingBottom:"5dvh"
   },
 });
 
@@ -38,8 +39,8 @@ const LSidebar = chakra(GridItem, {
     position: "sticky",
     top:0,
     left: 0,
-    bottom: 0,
-   },
+    bottom:0
+    },
 });
 
 interface ILeftSidebarProps {
