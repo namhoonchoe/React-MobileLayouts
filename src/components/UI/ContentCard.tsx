@@ -1,5 +1,6 @@
 import React from "react";
 import { chakra, Flex, Text, Img } from "@chakra-ui/react";
+import imageUrl from "../../../public/assets/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
 
 const CardLayout = chakra(Flex, {
   baseStyle: {
@@ -40,6 +41,7 @@ const TagContainer = chakra(Flex, {
     mt: 1,
   },
 });
+ 
 
 const ContentCard: React.FC = () => {
   return (
@@ -49,7 +51,7 @@ const ContentCard: React.FC = () => {
         height={"100%"}
         objectFit={"cover"}
         objectPosition={"top center"}
-        src="src\assets\kabita-darlami-9yE8_zwjZOY-unsplash.jpg"
+        src={imageUrl}
         alt="My Image"
       />
 
