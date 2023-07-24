@@ -6,7 +6,7 @@ const LeftSideBarGrid = chakra(Grid, {
     width: "100%",
     maxWidth: "1520px",
     alignItems:"start",  
-    gridTemplateColumns: { base: "1fr", md: "repeat(6,1fr)" },
+    gridTemplateColumns: { base: "1fr", md: "repeat(8,1fr)", lg:"repeat(6,1fr)" },
     gridTemplateAreas: {
       base: `
       "main-content main-content main-content"
@@ -14,9 +14,9 @@ const LeftSideBarGrid = chakra(Grid, {
       "main-content main-content main-content"
       "main-content main-content main-content"
       "left-sidebar  left-sidebar left-sidebar"`,
-      md: `"left-sidebar  main-content main-content main-content main-content main-content "
-    "left-sidebar  main-content main-content main-content main-content  main-content "
-    "left-sidebar  main-content main-content main-content main-content   main-content"`,
+      md: `"left-sidebar  main-content main-content main-content main-content main-content main-content main-content"
+    "left-sidebar  main-content main-content main-content main-content  main-content main-content main-content"
+    "left-sidebar  main-content main-content main-content main-content   main-content main-content main-content"`,
     },
   },
 });

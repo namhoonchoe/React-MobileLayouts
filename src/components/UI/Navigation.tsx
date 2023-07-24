@@ -13,7 +13,7 @@ const SideBarNavigation = chakra(Flex, {
     borderColor: "black",
     borderRight: "1px",
     flexDirection: "column",
-    alignItems: "start",
+    alignItems: {md:"center" ,lg:"start"},
     justifyContent: "start",
     paddingX: "0.25rem",
   },
@@ -35,7 +35,7 @@ const MobileNavigation = chakra(Flex, {
 const NavContainer = chakra(Flex, {
   baseStyle: {
     flexGrow: 1,
-    padding: `0.5rem 1rem `,
+    padding: {md:"1rem", lg:`0.5rem 1rem `} ,
     height: { sm: "3rem", md: "4.5rem" },
     justifyContent: "center",
     alignItems: "center",
@@ -50,7 +50,7 @@ const IconContainer = chakra(Flex, {
     justifyContent: "center",
     alignItems: "center",
     flexGrow: 1,
-    mr: "1em",
+    mr: {base:"none", lg:"1em"},
   },
 });
 
